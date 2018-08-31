@@ -90,7 +90,7 @@ class Slapper(commands.Converter):
 async def slap(ctx, *, reason: Slapper):
     await ctx.send(reason)
 @bot.command
-async def math(ctx):
+async def math(ctx): #gotta get this working somehow
     async def add(ctx, a: int, b: int):
         await ctx.send(a + b)
     async def subtract(ctx, a: int, b: int):
